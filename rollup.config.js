@@ -1,6 +1,6 @@
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import { uglify } from "rollup-plugin-uglify";
-import { terser } from "rollup-plugin-terser";
+// import { terser } from "rollup-plugin-terser";
 import typescript from 'rollup-plugin-typescript2';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
@@ -49,7 +49,7 @@ export default [
     plugins: [
       resolve(),
       typescript(tsconfig),
-      terser(),
+      // terser(),
       sourcemaps()
     ]
   }
